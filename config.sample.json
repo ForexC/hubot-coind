@@ -1,0 +1,17 @@
+{"daemon":{
+  "host": "localhost",
+  "port": 29947,
+  "username": "",
+  "password": "",
+  "timeout": 30000
+},
+"name": "MonetaryUnit",
+"symb": "MUE",
+"mintip": 100,
+"minwithdraw": 100,
+"fee": 1,
+"cmddelay": 10,
+"minconf": 6,
+"soakinterval_minutes": 10,
+"minactivetime": 2
+}
