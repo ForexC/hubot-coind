@@ -113,11 +113,6 @@ class Actives
 
 module.exports = (robot) ->
   actives = new Actives robot
-    #todo: if adapater is irc and config.nickserv.enforce is true:
-    #isIdentified from, (status) ->
-    #  unless status
-    #    msg.reply "[ERR] #{from}, you need to identify with NickServ"
-    #    return
 
   robot.hear /.*/, (msg) ->
     unless is_pm msg
@@ -406,7 +401,10 @@ module.exports = (robot) ->
     return
 
   readConfig = (callback) ->
-    config = __dirname + '/../config.json'
+    if process.env.HUBOT_COIND_CONFIG
+      cfg = process.env.HUBOT_COIND_CONFIG
+      config = __dirname + '/../' + cfg
+    else config = __dirname + '/../config.json'
 
     unless config
       robot.logger.error "Main configuration file config.json does not exist."
