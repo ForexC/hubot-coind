@@ -4,19 +4,21 @@
 #
 # Configuration:
 #   See config.json
+#   You may use HUBOT_COIND_CONFIG env var to
+#   set a custom cfg ie: 'config_alt.json'
 #
 # Commands:
+#   hubot about - About this bot
+#   hubot active - Count the channel's active users.
 #   hubot address - Get a deposit address
 #   hubot balance - Show your balance
-#   hubot active - Count the channel's active users.
+#   hubot diff - Show difficulty
+#   hubot height - Show block height
+#   hubot hps - Show network hashrate
 #   hubot rain <amount> - Rain on the channel's active users.
 #   hubot soak <amount> - Soak the channel with accumulated coins
 #   hubot tip <user> <amount> - Tip a specific user or bot
 #   hubot withdraw <amount> <address> - Withdraw your coins
-#   hubot height - Show block height
-#   hubot hps - Show network hashrate
-#   hubot diff - Show difficulty
-#   hubot about - About this bot
 #
 # Author:
 #   upgradeadvice
